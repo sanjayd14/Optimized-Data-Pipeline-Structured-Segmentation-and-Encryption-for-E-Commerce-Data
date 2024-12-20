@@ -1,0 +1,23 @@
+SQL Queries Used:
+
+  For segregating the table into 3 different tables:
+  
+  #customer_info --> select "Customer ID","First Name","Last Name","Email Address","Phone Number","Shipping Address","VIP Status"
+                     from FLOWFILE
+  
+  #order_info --> select "Customer ID","Order ID","Order Date","Product ID","Total Purchase Value"
+                  from FLOWFILE 
+
+  #payment_and_delivery_info --> select "Customer ID","Order ID","Total Purchase Value","Payment Info","Delivery Status","Delivery Address"
+                                 from FLOWFILE
+
+
+  For creating a new column in payment_and_delivery_info and assign its value from pre-existing column "Total Purchase Value":
+
+  SELECT *, 
+  CASE 
+    WHEN "Total Purchase Value" < 500 THEN 'Wireless Mouse'
+    WHEN "Total Purchase Value" <= 1200 THEN 'Bluetooth Headphones'
+    ELSE 'Keyboard + Wireless Mouse'
+  END AS "Gift Won"
+  FROM FLOWFILE
