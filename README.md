@@ -1,5 +1,5 @@
 # Optimized-Data-Pipeline-Structured-Segmentation-and-Encryption-for-E-Commerce-Data
-##Project Overview
+## Project Overview
 
 This project demonstrates an optimized data engineering pipeline for processing E-commerce data. The pipeline involves multiple stages, including data pre-processing,data transformation, cryptographic encryption, format conversion, and secure data storage. The entire process is automated using Python, Apache NiFi, SQL and MinIO, ensuring efficient data handling and security.
 
@@ -12,7 +12,6 @@ This project demonstrates an optimized data engineering pipeline for processing 
 - **Fernet (Python Cryptography)**: For encrypting sensitive data.
 - **SQL**: For queries used for data segmentation.
 - **Parquet**: Columnar storage format for efficient querying and analysis.
-
 
 ## Project Workflow
 
