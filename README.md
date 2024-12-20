@@ -5,15 +5,15 @@ This project demonstrates an optimized data engineering pipeline for processing 
 
 **Tools & Technologies:**
 
-Python: For data processing and encryption.
+Python: For data processing and encryption./n
 Pandas: For data cleaning and manipulation.
 MinIO: S3-compatible storage for input and output data.
 Apache NiFi: For data flow management, segmentation, and processing.
 Fernet (Python Cryptography): For encrypting sensitive data.
 SQL: For queries used for data segmentation.
 Parquet: Columnar storage format for efficient querying and analysis.
-**
-Project Workflow:**
+
+**Project Workflow:**
 
 Data Pre-Processing: The raw E-commerce dataset is cleaned using Pandas.
 
