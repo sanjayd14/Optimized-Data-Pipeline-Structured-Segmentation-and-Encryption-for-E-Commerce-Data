@@ -21,4 +21,16 @@ This project demonstrates an optimized data engineering pipeline for processing 
 - **Data Conversion**: The segmented data in CSV format is converted into Parquet format to optimize storage and processing efficiency.
 - **Data Storage**: The final Parquet files are uploaded to a MinIO bucket for long-term storage and access.
 
+## Setup & Usage
 
+1. **Setup MinIO**:  
+   Follow the official [MinIO Installation Guide](https://min.io/docs).
+
+2. **Setup Apache NiFi**:  
+   Refer to the [Apache NiFi Installation Guide](https://nifi.apache.org/docs.html).
+
+## File Descriptions
+
+- **data/**: Input and output data files.
+- **scripts/**: Python scripts for cleaning, encryption, and conversion.
+- **docs/**: Documentation files (Project FLowchart,NiFi Flow, NiFi Processor Configuration and NiFi SQL Queries).
