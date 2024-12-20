@@ -16,7 +16,9 @@ Parquet: Columnar storage format for efficient querying and analysis.
 Project Workflow:**
 
 Data Pre-Processing: The raw E-commerce dataset is cleaned using Pandas.
+
 Data Segmentation: The cleaned data is processed in Apache NiFi, where it is segmented into structured components for further use.
+
 Data Encryption: Sensitive columns in the data are encrypted using Python's Fernet encryption.
 Data Conversion: The segmented data in CSV format is converted into Parquet format to optimize storage and processing efficiency.
 Data Storage: The final Parquet files are uploaded to a MinIO bucket for long-term storage and access.
